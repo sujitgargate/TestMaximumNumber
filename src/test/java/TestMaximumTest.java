@@ -18,14 +18,14 @@ public class TestMaximumTest {
       assertMethod(numberArray);
    }
 
-   //Testing maximum number at 1st position
+   //Testing maximum number at 2nd position
    @Test
    public void numberAt2nd_Method_Should_Return_MaximumNumber() {
       Integer[] numberArray = {3,4,1};
       assertMethod(numberArray);
    }
 
-   //Testing maximum number at 1st position
+   //Testing maximum number at 3rd position
    @Test
    public void numberAt3rd_Method_Should_Return_MaximumNumber() {
       Integer[] numberArray = {1,2,4};
