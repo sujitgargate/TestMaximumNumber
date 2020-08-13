@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class TestMaximum {
    public static void main(String[] args) {
@@ -34,5 +35,20 @@ public class TestMaximum {
          }
       }
       return numberArray[i];
+   }
+
+   //Method Returns Greatest String
+   public String findMaximumString(String[] stringArray) {
+
+      int maxStringLength = stringArray[0].length();
+
+      int i = 1;
+      for(; i < stringArray.length; i++) {
+
+         if(stringArray[i].length() > maxStringLength) {
+            maxStringLength = stringArray[i].length();
+         }
+      }
+      return stringArray[i-1];
    }
 }
