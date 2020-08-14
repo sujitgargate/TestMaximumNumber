@@ -5,22 +5,22 @@ import org.junit.Test;
 public class TestMaximumTest {
 
    //This method contains Assertion and compareTo() Calling For Integer Values
-   public void assertMethod(Integer[] numberArray) {
-      TestMaximum testMaximum = new TestMaximum();
-      int maximumNumber = testMaximum.findMaximumIntegerNumber(numberArray);
+   public void assertMethod(Integer[] elementsArray) {
+      TestMaximum testMaximum = new TestMaximum(elementsArray);
+      Comparable maximumNumber = testMaximum.findMaxElement(elementsArray);
       Assert.assertEquals(4, maximumNumber);
    }
 
    //This method contains Assertion and compareTo() Calling For Double Values
-   public void assertFloatMethod(Double[] numberArray) {
-      TestMaximum testMaximum = new TestMaximum();
-      double maximumNumber = testMaximum.findMaximumFloatNumber(numberArray);
-      Assert.assertEquals(4.0, maximumNumber,0);
+   public void assertFloatMethod(Double[] elementsArray) {
+      TestMaximum testMaximum = new TestMaximum(elementsArray);
+      Comparable maximumNumber = testMaximum.findMaxElement(elementsArray);
+      Assert.assertEquals(4.0, (Double) maximumNumber,0);
    }
 
-   private void assertStringMethod(String[] stringArray) {
-      TestMaximum testMaximum = new TestMaximum();
-      String maximumString = testMaximum.findMaximumString(stringArray);
+   private void assertStringMethod(String[] elementsArray) {
+      TestMaximum testMaximum = new TestMaximum(elementsArray);
+      Comparable maximumString = testMaximum.findMaxElement(elementsArray);
       Assert.assertEquals("Monkey", maximumString);
    }
 

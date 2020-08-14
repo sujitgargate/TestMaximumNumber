@@ -1,54 +1,32 @@
 import java.util.Arrays;
 
-public class TestMaximum {
+public class TestMaximum <E extends  Comparable> {
+   E elementsArray[];
+
+   public TestMaximum(E [] elementsArray) {
+      this.elementsArray = elementsArray;
+   }
+
    public static void main(String[] args) {
+
+      Integer[] integerArray = {12, 33, 656, 1112};
+      Double[] floatArray = {71.1, 52.12, 34.5};
+      String[] stringArray = {"Mumbai", "Patna", "Delhi"};
+
+      new TestMaximum(integerArray).findMaxElement(integerArray);
+      new TestMaximum(floatArray).findMaxElement(floatArray);
+      new TestMaximum(stringArray).findMaxElement(stringArray);
    }
 
-   //
-   public Integer findMaximumIntegerNumber(Integer[] numberArray) {
-      int maximumIntegerNumber;
-
-      //Writing i outside because it can be accessible in whole function
-      int i = 0;
-      for(; i < numberArray.length - 1; i++) {
-
-         //compareTo() returns value in form of 1, 0, -1
-         maximumIntegerNumber = numberArray[i].compareTo(numberArray[i+1]);
-         if(maximumIntegerNumber > 0 ) {
-            break;
+   //Finding Maximum element using generics
+   public <E extends Comparable> E findMaxElement(E [] array) {
+         E maxElement = array[0];
+         for (E element : array) {
+            if (element.compareTo(maxElement) > 0 && element.compareTo(maxElement) == 0) {
+               maxElement = element;
+            }
          }
+      System.out.println(maxElement);
+      return maxElement;
       }
-      return numberArray[i];
    }
-
-   public Double findMaximumFloatNumber(Double[] numberArray) {
-      int maximumDoubleNumber;
-
-      //Writing i outside because it can be accessible in whole function
-      int i = 0;
-      for(; i < numberArray.length - 1; i++) {
-
-         //compareTo() returns value in form of 1, 0, -1
-         maximumDoubleNumber = numberArray[i].compareTo(numberArray[i+1]);
-         if(maximumDoubleNumber > 0 ) {
-            break;
-         }
-      }
-      return numberArray[i];
-   }
-
-   //Method Returns Greatest String
-   public String findMaximumString(String[] stringArray) {
-
-      int maxStringLength = stringArray[0].length();
-
-      int i = 1;
-      for(; i < stringArray.length; i++) {
-
-         if(stringArray[i].length() > maxStringLength) {
-            maxStringLength = stringArray[i].length();
-         }
-      }
-      return stringArray[i-1];
-   }
-}

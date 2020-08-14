@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestMaximumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-13T17:36:31" hostname="SUJITGARGATE" time="0.002">
+<testsuite name="TestMaximumTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-08-14T01:59:13" hostname="SUJITGARGATE" time="0.053">
   <properties/>
-  <testcase name="stringAt3rd_Position_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.002"/>
+  <testcase name="numberAt2nd_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.008"/>
+  <testcase name="floatNumberAt3rd_Position_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.004"/>
+  <testcase name="stringAt1st_Position_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.003"/>
+  <testcase name="numberAt1st_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.001"/>
+  <testcase name="stringAt2nd_Position_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.002"/>
+  <testcase name="floatNumberAt1st_Position_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.001"/>
+  <testcase name="stringAt3rd_Position_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.001"/>
+  <testcase name="numberAt3rd_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.002"/>
+  <testcase name="floatNumberAt2nd_Position_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
