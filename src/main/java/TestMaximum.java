@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class TestMaximum <E extends  Comparable> {
    E elementsArray[];
 
@@ -26,6 +24,12 @@ public class TestMaximum <E extends  Comparable> {
                maxElement = element;
             }
          }
+      printMaximumElement(maxElement);
       return maxElement;
       }
+
+      //For
+   public <E> void printMaximumElement(E maximumElement) {
+      System.out.println("Maximum in "+ maximumElement.getClass().getSimpleName() +" is "+ maximumElement);
    }
+}

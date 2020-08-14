@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestMaximumTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-08-14T03:55:03" hostname="SUJITGARGATE" time="0.005">
+<testsuite name="TestMaximumTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-08-14T04:05:42" hostname="SUJITGARGATE" time="0.015">
   <properties/>
-  <testcase name="stringAt1st_Position_Method_Should_Return_Max_String" classname="TestMaximumTest" time="0.002"/>
+  <testcase name="stringAt1st_Position_Method_Should_Return_Max_String" classname="TestMaximumTest" time="0.008"/>
   <testcase name="numberAt2nd_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.0"/>
   <testcase name="stringAt3rd_Position_Method_Should_Return_Max_String" classname="TestMaximumTest" time="0.0"/>
-  <testcase name="floatNumberAt3rd_Position_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.0"/>
+  <testcase name="floatNumberAt3rd_Position_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.002"/>
   <testcase name="numberAt1st_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.0"/>
   <testcase name="floatNumberAt1st_Position_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.0"/>
-  <testcase name="numberAt3rd_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.001"/>
+  <testcase name="numberAt3rd_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.0"/>
   <testcase name="stringAt2nd_Position_Method_Should_Return_Max_String" classname="TestMaximumTest" time="0.0"/>
-  <testcase name="floatNumberAt2nd_Position_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="floatNumberAt2nd_Position_Method_Should_Return_MaximumNumber" classname="TestMaximumTest" time="0.001"/>
+  <system-out><![CDATA[Maximum in String is tiger
+Maximum in Integer is 4
+Maximum in String is tiger
+Maximum in Double is 4.0
+Maximum in Integer is 4
+Maximum in Double is 4.0
+Maximum in Integer is 4
+Maximum in String is tiger
+Maximum in Double is 4.0
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
